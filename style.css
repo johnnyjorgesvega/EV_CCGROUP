@@ -37,6 +37,17 @@ section {
     margin: 20px
 }
 
+.cuadro_de_imagenes img {
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+.cuadro_de_imagenes img:hover {
+  transform: translateY(-5px);
+  border: 5px solid yellow;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 #nav_redondo{
     background-color: rgb(23, 23, 51); 
     border-radius: 20px; 
@@ -50,6 +61,10 @@ section {
     color: black"
 }
 
+#nav_redondo_lista{
+    background-color: #F28C00; 
+}
+
 .navbar-light .navbar-brand{
     padding: 16px;
     border-radius: 40px;
@@ -59,3 +74,66 @@ section {
     background-color: #F28C00;
 }
 
+/* Agrega estilos personalizados para los indicadores */
+.carousel-indicators li {
+    background-color: #bbb; /* Color de fondo de los puntos inactivos */
+    border-radius: 50%; /* Hace que los puntos sean redondos */
+    width: 10px; /* Ancho del punto */
+    height: 10px; /* Altura del punto */
+    margin: 0 4px; /* Espaciado entre los puntos */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #007bff; /* Color de fondo del punto activo */
+  }
+
+@media only screen and (max-width: 767px) {
+    #carousel_grande{
+        display: none
+    }
+    .cuadro_de_imagenes{
+        display:none
+    }
+    .imgLogo{
+        display:none
+    }
+    .navbar-light .navbar-brand:hover {
+        background-color: white;
+    }
+    #nav_redondo{
+        background-color: rgb(32, 35, 70); 
+        border-radius: 0px; 
+        padding-left:20px; 
+        padding-right: 20px; 
+        color: black";
+    }
+    #nav_redondo:hover{
+        background-color: skyblue;
+        color: black"
+    }
+    
+    #nav_redondo_lista{
+        background-color: skyblue; 
+        color: black"
+    }
+    .navbar-light .navbar-brand:hover {
+        background-color: white;
+        color: black"
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    #carousel_pequeño{
+        display: none
+    }
+    #img_carousel_pequeño{
+        display: none
+    }
+    .imgIsotipo{
+        display: none
+    }
+    .navbar-toggler{
+        display: none
+    }
+  }
+  
